@@ -1,0 +1,14 @@
+# System files
+.DS_Store
+.DS_Store?
+._*
+
+# Jupyter / Python cache
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Local environments
+.venv/
+env/
+venv/
