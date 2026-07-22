@@ -26,6 +26,18 @@ This project models EV charging tariff optimization as a closed-loop analytics p
 
 The project is organized as an analytics workflow under the Analytics directory. Sequential notebooks handle preprocessing, exploration, demand prediction, tariff pricing, and monitoring, with CSV outputs for predictions and metrics.
 
+## Architecture Diagram
+
+```mermaid
+flowchart LR
+  Data["EV Charging and Tariff Data"] --> Preprocess["Data Preprocessing"]
+  Preprocess --> EDA["Exploratory Analysis"]
+  EDA --> Demand["Demand Forecasting Models"]
+  Demand --> Pricing["Dynamic Tariff Policy"]
+  Pricing --> Monitor["Monitoring and Learning Metrics"]
+  Monitor --> Results["Predictions, Tariffs, and Reports"]
+```
+
 ## Technology Stack
 
 - Pandas, NumPy, and SciPy for data preparation and analysis.
